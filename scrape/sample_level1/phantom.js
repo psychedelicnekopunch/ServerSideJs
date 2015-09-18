@@ -1,3 +1,5 @@
+// $ phantomjs phantom.js
+
 var objectForScrapeInterface = function()
 {
 	return {

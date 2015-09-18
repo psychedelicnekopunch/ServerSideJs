@@ -1,3 +1,5 @@
+// $ node mysql.js
+
 var EventEmitter = require('events').EventEmitter;
 var Mysql        = require('./mysqlConnect.js');
 
