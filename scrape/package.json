@@ -1,0 +1,21 @@
+{
+  "name": "",
+  "version": "0.0.0",
+  "description": "",
+  "main": "",
+  "dependencies": {
+    "cron": "^1.0.9",
+    "forever": "^0.15.1",
+    "forever-monitor": "^1.6.0",
+    "moment": "^2.10.6",
+    "mysql": "file:../../../../../../tmp/npm-28513-d2af5ac9/git-cache-e8bfa58543da/6ad9f4b0cf40b563cb583b169bda531bdb731159",
+    "phantom": "^0.7.2",
+    "phantomjs": "^1.9.18"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
