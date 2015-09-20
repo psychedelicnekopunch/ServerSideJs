@@ -1,7 +1,7 @@
 // $ node mysql.js
 
-var EventEmitter = require('events').EventEmitter;
-var Mysql        = require('./mysqlConnect.js');
+var EventEmitter   = require('events').EventEmitter;
+var MysqlConnector = require('./MysqlConnector.js').MysqlConnector;
 
 var ev = new EventEmitter();
 
@@ -45,4 +45,4 @@ ev.on('mysql_connect', function(connection)
 	Test.get();
 });
 
-Mysql.mysqlConnect.init(ev);
+MysqlConnector.init(ev);

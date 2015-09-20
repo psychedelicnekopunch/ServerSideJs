@@ -1,2 +1,3 @@
 scrape/node_modules
-scrape/sample_level1/mysqlConnect.js
+scrape/sample_level1/MysqlConnector.js
+scrape/sample_level3/MysqlConnector.js
