@@ -1,4 +1,4 @@
-// $ node scrape.js
+// $ node main.js
 
 var CronJob        = require('cron').CronJob;
 var EventEmitter   = require('events').EventEmitter;
