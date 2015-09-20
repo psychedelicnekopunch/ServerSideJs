@@ -3,6 +3,8 @@
 var EventEmitter   = require('events').EventEmitter;
 var MysqlConnector = require('./MysqlConnector.js').MysqlConnector;
 
+var moment = require('moment');
+
 var ev = new EventEmitter();
 
 
@@ -30,11 +32,39 @@ ev.on('mysql_connect', function(connection)
 			});
 		};
 
+		var add = function(message)
+		{
+			if (!message) {
+				ev.emit('test_add_error');
+				return;
+			}
+			var params = {
+				message     : message,
+				action_time : moment().format('X'),
+			};
+
+			mysql.query('insert into test set ?', params, function(err, result)
+			{
+				if (err) {
+					console.log(err);
+					return;
+				}
+				// console.log(result);
+				ev.emit('test_add');
+			});
+		};
+
 		return {
 			get    : get,
+			add    : add,
 			params : params,
 		};
 	})();
+
+	ev.on('test_add', function()
+	{
+		Test.get();
+	});
 
 	ev.on('test_get', function()
 	{
@@ -42,7 +72,7 @@ ev.on('mysql_connect', function(connection)
 		console.log(Test.params.lists);
 	});
 
-	Test.get();
+	Test.add('test : ' + moment().format());
 });
 
 MysqlConnector.init(ev);
