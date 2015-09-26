@@ -9,6 +9,7 @@
     "lodash": "^3.10.1",
     "moment": "^2.10.6",
     "mysql": "git://github.com/felixge/node-mysql",
+    "nightmare": "^2.0.6",
     "phantom": "^0.7.2",
     "phantomjs": "^1.9.18",
     "pm2": "^0.14.7"
