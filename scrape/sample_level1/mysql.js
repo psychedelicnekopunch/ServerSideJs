@@ -70,6 +70,7 @@ ev.on('mysql_connect', function(connection)
 	{
 		console.log('Test.get() -> on.test_get');
 		console.log(Test.params.lists);
+		process.exit();
 	});
 
 	Test.add('test : ' + moment().format());
