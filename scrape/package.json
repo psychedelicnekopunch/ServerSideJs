@@ -4,6 +4,7 @@
   "description": "",
   "main": "",
   "dependencies": {
+    "casperjs": "^1.1.0-beta3",
     "cheerio": "^0.19.0",
     "co": "^4.6.0",
     "cron": "^1.0.9",
@@ -15,6 +16,7 @@
     "phantomjs": "^1.9.18",
     "pm2": "^0.14.7",
     "q": "^1.4.1",
+    "spooky": "^0.2.5",
     "vo": "^1.0.3"
   },
   "devDependencies": {},
